@@ -1,3 +1,6 @@
+
+
+
 function renderSurfboard(surfboard) {
 
     const li = document.createElement('li');
@@ -37,12 +40,45 @@ function renderSurfboard(surfboard) {
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
     button.value = surfboard.code;
+    button.addEventListener('click', () => {
+
+        let stringToObject = localStorage.getItem('CART');
+        let cart;
+        if (stringToObject) {
+            cart = JSON.parse(stringToObject);
+        }
+        else {
+            cart = [];
+        }
+        
+        let lineItem = findById(cart, surfboard.id);
+
+        if (!lineItem) {
+            lineItem = {
+                id: surfboard.id,
+                quantity: 1
+            };
+
+            cart.push(lineItem);
+        }
+
+        else {
+            lineItem.quantity++;
+        }
+
+        stringToObject = JSON.stringify(cart); 
+        localStorage.setItem('CART', stringToObject);
+
+        alert('1 ' + surfboard.name + ' added to cart');
+
+    });
+
     p5.appendChild(button);
-
+    
     li.appendChild(p5);
-
+    
     return li;
-
 }
+
 
 export default renderSurfboard;
