@@ -8,3 +8,6 @@ for (let i = 0; i < surfboards.length; i++) {
     const dom = renderSurfboard(surfboard);
     list.appendChild(dom);
 }
+
+
+//const surfboards = localStorage.getItem('surfboards');
