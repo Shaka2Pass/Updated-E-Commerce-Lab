@@ -45,11 +45,25 @@ html {
   color: rgb(209, 202, 202);
 }
 
+#Welcome{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 280px;
+    width: 100%;
+    height: 9%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+a.nav-child{
+    color: rgb(127, 255, 212)
+}
+
 #surfboardContainer {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
-
+    margin-top: 125px;
 }
 
 #surfboards {
@@ -61,6 +75,7 @@ html {
     width: 50%;
     background-color: rgba(45, 48, 47, 0.9);
     border: 5px solid rgb(209, 202, 202);
+    border-radius: 10%;
     color: rgb(209, 202, 202);
 }
 
@@ -70,6 +85,7 @@ html {
     align-items: center;
     height: 300px;
     width: 300px;
+    border-radius: 30px;
 }
 
 ul#surfboards{
