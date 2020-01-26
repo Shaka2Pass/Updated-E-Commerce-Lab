@@ -1,3 +1,6 @@
+import { findById } from './utils.js';
+
+
 function renderSurfboard(surfboard) {
 
     const li = document.createElement('li');
@@ -12,6 +15,7 @@ function renderSurfboard(surfboard) {
     const img = document.createElement('img');
     img.src = '../assets/' + surfboard.image;
     img.alt = surfboard.name + 'image';
+    img.className = surfboard.category;
     li.appendChild(img);
 
     const p1 = document.createElement('p');
@@ -37,12 +41,44 @@ function renderSurfboard(surfboard) {
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
     button.value = surfboard.code;
+    button.addEventListener('click', () => {
+
+        let stringToObject = localStorage.getItem('CART');
+        let cart;
+        if (stringToObject) {
+            cart = JSON.parse(stringToObject);
+        }
+        else {
+            cart = [];
+        }
+        
+        let lineItem = findById(cart, surfboard.id);
+
+        if (!lineItem) {
+            lineItem = {
+                id: surfboard.id,
+                quantity: 1
+            };
+
+            cart.push(lineItem);
+        }
+
+        else {
+            lineItem.quantity++;
+        }
+
+        stringToObject = JSON.stringify(cart); 
+        localStorage.setItem('CART', stringToObject);
+
+
+    });
+
     p5.appendChild(button);
-
+    
     li.appendChild(p5);
-
+    
     return li;
-
 }
+
 
 export default renderSurfboard;

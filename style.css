@@ -1,0 +1,10 @@
+#Nav-Bar {
+    display: grid;
+    grid-template-rows: 40px 90px auto; 
+    grid-template-columns: 100px auto 100px;
+    height 80px
+}
+
+#Home-Title {
+    position;
+}

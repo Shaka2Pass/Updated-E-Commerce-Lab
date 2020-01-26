@@ -7,25 +7,29 @@
         <title>Your Shopping Cart</title>
         <link rel="stylesheet" href="/main.css">
         <link rel="stylesheet" href="./shopping-cart.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Permanent+Marker&display=swap" rel="stylesheet" rel="stylesheet">
     </head>
     <body>
-        <body>
-            <header>
-            <h1>They All Float Shopping Cart</h1>
-            <nav>
-                <a href="../">Home Break</a>
-                <a href="../products.html">Buy Surfboards</a>
-                <a href="../shoppingCart.html">Your Shopping Cart</a>
-            </nav>
-            </header>
-            <main>
+        <body id="Home-Background">
+
+            <div>
+                <h1 id="Home-Title">THEY ALL FLOAT SURF SHOP</h1>
+            </div>
+            <div>
+                 <nav id="Nav-Bar">
+                    <a class = "nav-child" href="../">HOME BREAK</a>
+                    <a class = "nav-child" href="../products.html">BUY A SURFBOARD</a>
+                    <a class = "nav-child" href="./">YOUR CART</a>
+                </nav>
+            </div>
+            <main id="checkoutContainer">
                 <table>
                     <thead>
                         <tr>
-                            <td class="align-left">Surfboard</td>
-                            <td>Qty</td>
-                            <th>Price</th>
-                            <th>Total</th>
+                            <td class="surfboardType">Surfboard</td>
+                            <td class="qty">Qty</td>
+                            <th class="price">Price</th>
+                            <th class="total">Total</th>
                         </tr>
                     </thead>
         
@@ -42,7 +46,7 @@
                 </table>
         
                 <p class="order-now-container">
-                    <button>Place Order</button>
+                    <button id="place-surfboard-order">Place Order</button>
                 </p>
             </main>
         

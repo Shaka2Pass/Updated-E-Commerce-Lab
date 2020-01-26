@@ -3,8 +3,6 @@ export function findById(fubarItems, fubarID) {
     for (let i = 0; i < fubarItems.length; i++) {
 
         const singleFubarItem = fubarItems[i];
-        console.log(singleFubarItem.id);
-        console.log(fubarID);
         if (singleFubarItem.id === fubarID) {
 
             return singleFubarItem; 

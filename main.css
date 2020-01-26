@@ -1,11 +1,135 @@
-#PageName {
+
+
+html { 
+    background: url(./assets/Home-Cape-Lookout.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+#Home-Title {
     position: fixed;
     top: 0px;
     left: 0px;
+    right: 0px;
     margin: 0px;
     padding: 10px;
     width: 100%;
-    background-color: darkblue;
+    height: 70px;
+    background-color: rgba(45, 48, 47, 0.9);
+    color: rgb(209, 202, 202);
     z-index: 10px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#Nav-Bar {
+    position: fixed;
+    display: flex;
+    align-items: start;
+    top: 60px;
+    width: 100%;
+    height: 9%;
+    font-family: 'Permanent Marker', cursive;
+    color: gray;
+}
+
+.nav-child {
+  display: flex;
+  width: 100%;
+  height: .02;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: .8em;
+  color: rgb(209, 202, 202);
+}
+
+#Welcome{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 280px;
+    width: 100%;
+    height: 9%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+a.nav-child{
+    color: rgb(127, 255, 212)
+}
+
+#surfboardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+}
+
+#surfboards {
+    list-style: none;
+    position: flex;
+    justify-content: center ;
+    padding: 1%;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(45, 48, 47, 0.9);
+    border: 5px solid rgb(209, 202, 202);
+    border-radius: 10%;
+    color: rgb(209, 202, 202);
+}
+
+#surfboards img {
+    list-style: none;
+    position: flex;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+ul#surfboards{
+    position: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: medium;
+}
+
+#surfboards h2{
+    color: aquamarine
+}
+
+#surfboards p{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+#checkoutContainer {
+margin-top: 300px;
+border: 5px solid rgb(127, 255, 212);
+width: 50%;
+background: gainsboro;
+opacity: 80%;
+}
+
+td#surfboardType{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+td#qty{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+th#price{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+th#total{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
 }
 

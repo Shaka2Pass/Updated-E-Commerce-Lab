@@ -1,78 +1,78 @@
 const longboard = {
     id: 'longboard',
-    name: 'Log Longboard',
+    name: 'Model: Log Longboard',
     image: 'Longboard.jpg',
     description: 'Heavy, long, cumbersome - everyones first board, until your bored.',
-    color: 'Blue',
-    fin: 'Single-Fin',
-    category: 'Beginner',
+    color: 'Color: Blue',
+    fin: 'Fin Style: Single-Fin',
+    category: 'rider Type: Beginner',
     price: 1000.00,
     buy: 'Add to Cart'
 };
 
 const shortboard = {
     id: 'shortboard',
-    name: 'Sharp Shooter Shortboard',
+    name: 'Model: Sharp Shooter Shortboard',
     image: 'Red_Shortboard.jpg',
     description:'Quick, precise, technical - you think your ready, but you\'re not.',
-    color:  'Red',
-    fin: 'Thruster',
-    category:'Intermediate-Advanced',
+    color:  'Color: Red',
+    fin: 'Fin Style: Thruster',
+    category:'Rider Type: Advanced',
     price: 700.00,
 };
 
 const fish = {
     id: 'fish',
-    name: 'Flying Fish',
+    name: 'Model: Flying Fish',
     image:'Orange_Fish.jpg',
-    description: 'Flowy, free soul, retro - you are already surfing better',
-    color: 'Orange',
-    fin: 'Twin-fin',
-    category:'Intermediate-Advanced',
+    description: 'Flowy, fast, soul arches - you are already surfing better.',
+    color: 'Color: Orange',
+    fin: 'Fin Style: Twin-fin',
+    category:'Rider Type: Intermediate - Advanced',
     price: 650.00,
 };
 
 const fun_board = {
     id: 'fun_board',
-    name: 'Funny Funboard',
+    name: 'Model: Funny Funboard',
     image: 'Purple_Funboard.jpg',
     description: 'Floaty, smooth, forgiving - because catching more waves is never a bad thing.',
-    color: 'Purple',
-    fin: 'Quad',
-    category: 'Beginner',
+    color: 'Color: Purple',
+    fin: 'Fin Style: Quad',
+    category: 'Rider Type: Beginner - Advanced',
     price: 900.00,
 };
 
 const egg = {
     id: 'egg',
-    name: 'The Estatic Egg',
+    name: 'Model: The Estatic Egg',
     image: 'Yellow_Egg.jpg',
-    description: 'Wide, versatile, quiver-kiler - sometimes you need to surf an egg to make a wave.',
-    color: 'Yellow',
-    fin: 'Two Plus One',
-    category: 'Beginner - Advanced',
+    description: 'Wide, versatile, quiver-killer - sometimes you need to surf an egg to make a wave.',
+    color: 'Color: Yellow',
+    fin: 'Fin Style: Two Plus One',
+    category: 'Rider Type: Intermediate - Advanced',
     price: 700.00,
 };
 
 const step_up = {
     id: 'step_up',
-    name: 'Gun It Step Up',
+    name: 'Model: Gun-It Step Up',
     image: 'Red_gun.png',
     description: 'Fast, furious, finesse - its big out there, but you are ready, time to Gun It.',
-    color: 'Red',
-    fin: 'Quad',
-    category: 'Advanced',
+    color: 'Color: Red',
+    fin: 'Fin Style: Quad',
+    category: 'Rider Type: Advanced',
     price: 900.00,
 };
 
 const asymmetrical = {
     id: 'asymmetrical',
-    name: 'A-Typical Asym',
+    name: 'Model: A-Typical Asym',
     image: 'Pink_Asymmetrical.png',
     description: 'Wierd, wild, works - not sure it should work, but it does.',
-    color: 'pink',
-    fin: 'Two Plus One',
-    category: 'Intermediate - Advanced',
+    color: 'Color: pink',
+    fin: 'Fin Style: Two Plus One',
+    category: 'Rider Type: Intermediate - Advanced',
     price: 750.00,
 };
 
