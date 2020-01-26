@@ -15,6 +15,7 @@ function renderSurfboard(surfboard) {
     const img = document.createElement('img');
     img.src = '../assets/' + surfboard.image;
     img.alt = surfboard.name + 'image';
+    img.className = surfboard.category;
     li.appendChild(img);
 
     const p1 = document.createElement('p');

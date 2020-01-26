@@ -3,22 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="./shopping-cart.css">
     <title>TAFSS Surfboard Product</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Permanent+Marker&display=swap" rel="stylesheet">
     <base href="/">
 </head>
-<body>
-    <header>
-        <h1 id="PageName">They All Float Surf Shop</h1>
-         <nav>
-            <a href="../">Home Break</a>
-            <a href="./shopping-cart/index.html">My Shopping Cart</a>
-        </nav>
-    </header>
+
+<body id="Home-Background">
+
+    <div>
+        <h1 id="Home-Title">They All Float Surf Shop</h1>
+    </div>
+    <div>
+      <nav id="Nav-Bar">
+        <a class = "nav-child" href="../">HOME BREAK</a>
+        <a class = "nav-child" href="products.html">BUY A SURFBOARD</a>
+        <a class = "nav-child" href="./shopping-cart/index.html">YOUR CART</a>
+      </nav>
+    </div>
     
-    <main>
-        <h2>Surfboards</h2>
+    <div class="products">
+        <h2 id="surfboardContainer">
         <ul id="surfboards"></ul>
-    </main>
+        </h2>
+    </div>
 
     <script src="./products.js" type="module"></script>
 </body>

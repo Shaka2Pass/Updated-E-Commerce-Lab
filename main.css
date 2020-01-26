@@ -12,6 +12,7 @@ html {
     position: fixed;
     top: 0px;
     left: 0px;
+    right: 0px;
     margin: 0px;
     padding: 10px;
     width: 100%;
@@ -21,18 +22,17 @@ html {
     z-index: 10px;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-
-
 }
 
 #Nav-Bar {
     position: fixed;
     display: flex;
+    align-items: start;
+    top: 60px;
     width: 100%;
     height: 9%;
     font-family: 'Permanent Marker', cursive;
     color: gray;
-
 }
 
 .nav-child {
@@ -44,45 +44,76 @@ html {
   font-size: .8em;
   color: rgb(209, 202, 202);
 }
-    /*justify-content: space-evenly; 
-    align-items: 
-    flex-direction:
 
-}
-
-/* html, body {
-    height: 100px
-}
-
-.flex {
+#surfboardContainer {
     display: flex;
-    border: solid 1px red;
-    height: 80px;
-    justify-content: space-evenly; horizontal
-    align-items: flex end (verticle)
-    flex-direction: column- reverse
-    flex
+    justify-content: center;
+    margin-top: 200px;
 
-} OR YOU CAN USE GRID
-
-.grid {
-    display: grid;
-    grid-template-rows: 40px 90px auto; this will set width of each row
-    grit-template-columns: 100px auto 100px
-    border: solid 1px red;
-    height 80px
 }
 
+#surfboards {
+    list-style: none;
+    position: flex;
+    justify-content: center ;
+    padding: 1%;
+    height: 50%;
+    width: 50%;
+    background-color: rgba(45, 48, 47, 0.9);
+    border: 5px solid rgb(209, 202, 202);
+    color: rgb(209, 202, 202);
+}
 
-.flex-child {
-    backgound: green;
-    position: relative;
-    bottom: 20px;
-    left 20px;
+#surfboards img {
+    list-style: none;
+    position: flex;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
 
-.box {
-    width: 100px;
-    height: 100px;
-    border: solid 1px black;
+ul#surfboards{
+    position: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: medium;
+}
 
-} * The above styling comes from out lab 9 day when Danny was showing us some CSS.]
+#surfboards h2{
+    color: aquamarine
+}
+
+#surfboards p{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+#checkoutContainer {
+margin-top: 300px;
+border: 5px solid rgb(127, 255, 212);
+width: 50%;
+background: gainsboro;
+opacity: 80%;
+}
+
+td#surfboardType{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+td#qty{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+th#price{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
+th#total{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
