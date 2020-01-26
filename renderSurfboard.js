@@ -70,7 +70,6 @@ function renderSurfboard(surfboard) {
         stringToObject = JSON.stringify(cart); 
         localStorage.setItem('CART', stringToObject);
 
-        alert('1 ' + surfboard.name + ' added to cart');
 
     });
 
